@@ -1,0 +1,16 @@
+[package]
+name = "otp"
+version = "0.1.0"
+authors = ["tgarcin"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+keyring = "0.10.1"
+totp-rs = { version = "0.6.3", features = ["qr"] }
+base32 = "0.4.0"
+structopt = "0.3.21"
+confy = "0.4.0"
+serde = { version = "1.0", features = ["derive"] }
+clipboard = "0.5.0"
